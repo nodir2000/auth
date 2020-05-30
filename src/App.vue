@@ -1,21 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    
+    <h1>Application</h1>
+    <Formwizard />
+    <Firebase/>
+    <!-- <Card/> -->
+    <!-- <router-view/> -->
   </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+// import Card from './card/Card.vue' 
+// import Login from './Login/index';
+import Firebase from './firebase/Index.vue'
+import Formwizard from './formWizard/index3.vue'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  name: 'Todos',
+  components:{
+    Firebase,
+  Formwizard ,  
+    //  Card,
+    // Login
+    }
 }
 </script>
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -24,5 +33,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  
 }
 </style>
